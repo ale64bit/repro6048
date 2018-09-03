@@ -1,0 +1,9 @@
+bazel-bin
+bazel-genfiles
+bazel-repro6048
+bazel-out
+bazel-testlogs
+
+*.obj
+*.swp
+
