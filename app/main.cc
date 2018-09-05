@@ -12,7 +12,7 @@ int main(int argc, char **argv) {
     std::cerr << "failed to create Runfiles: " << error << '\n';
     return -1;
   }
-  std::string path = runfiles->Rlocation("data/test.txt");
+  std::string path = runfiles->Rlocation("repro6048/data/test.txt");
   std::cout << "path: " << path << '\n';
 
   std::unique_ptr<std::FILE, decltype(&std::fclose)> fp(
